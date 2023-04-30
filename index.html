@@ -7,79 +7,283 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SINUOS</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
-    <header>
+    <header class="cabecalho">
         <button id="logo">
-            <span class="material-symbols-outlined icone">
+            <span class="material-symbols-outlined icone, cabecalho__menu">
                 menu
             </span>
-            <h1 class="text-logo">
+            <a href="#" class="text-logo">
                 SINUOS
-            </h1>
+            </a>
         </button>
-
-        <div class="links">
-            <a href="#">Link direto</a>
-            <a href="#">Link direto</a>
-            <a href="#">Link direto</a>
-        </div>
-
-        <button id="btn-conta">
+        <a href="#" class="cabecalho__link"> link direto</a>
+        <a href="#" class="cabecalho__link"> link direto</a>
+        <a href="#" class="cabecalho__link"> link direto</a>
+        
+        <a href="#" id="btn-conta">
             <span class="nome-usuario">nome de usuário</span>
             <span class="material-symbols-outlined icone">
                 account_circle
             </span>
-        </button>
+        </a>
+
     </header>
+    <nav class="menu-lateral menu-lateral-ativo">
+       
+        <a href="a" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Inicio</a><!--os links que aparecem do lado-->
+        <a href="a" class="menu-lateral__link menu-lateral__link--inicio">link</a>
+        <a href="a" class="menu-lateral__link menu-lateral__link--inicio">link</a>
+        <a href="a" class="menu-lateral__link menu-lateral__link--inicio">link</a>
+        <a href="a" class="menu-lateral__link menu-lateral__link--inicio">link</a>
+        <a href="a" class="menu-lateral__link menu-lateral__link--inicio">link</a>
+    </nav>
+
+    <div class="rodape">
+    
+      <img id="my-image" src="dia-do-indio-origem-historia-e-importancia-da-celebracao-1-01-1024x512.webp" alt="Minha Imagem">
+    </div>
 
     <main>
+        <section class="entrada"><!--tela para usuario-->
+
+
+        </section>
+
+        <h1>MAPA</h1>
+
         <section class="mapa">
             <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15936.029210655384!2d-59.9681458!3d-3.0927149499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1681438220771!5m2!1sen!2sbr"
-                    width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1if4vcHrOqk92W_EOOMDrnC6tBP1D70Q&ehbc=2E312F" width="640" height="480"></iframe>
                 <details id="filtros">
                     <summary>Filtros</summary>
-                    <p>Algumas opções de filtros serão adicionadas aqui</p>
+                    <a class="inf-filtros" href="#">informaçoes</a>
+                    <a class="inf-filtros" href="#">informaçoes</a>
+                    <a class="inf-filtros" href="#">informaçoes</a>
                 </details>
             </div>
         </section>
 
-        <section class="graficos">
-            <h2>Alguns gráficos e tal</h2>
-            <div class="graficos-container carrossel">
+        <section class="carrossel">
+            <p class="carrosel__titulo">graficos</p>
+        
+            <div class="carrossel__container">
+        <div class="swiper">
+        
+        <div class="swiper-pagination"></div>
+        
+        
+        <div class="swiper-wrapper">
 
-                <div class="imagens">
-                    <img src="imgs/grafico1.svg">
-                    <img src="imgs/grafico2.svg">
-                    <img src="imgs/grafico3.svg">
-                    <img src="imgs/grafico1.svg">
-                    <img src="imgs/grafico2.svg">
-                    <img src="imgs/grafico3.svg">
-                </div>
 
-                <div class="navegacao">
-                    <button class="btn-left">
-                        <span class="material-symbols-outlined">
-                            arrow_left
-                        </span>
-                    </button>
-                    <button class="btn-right">
-                        <span class="material-symbols-outlined">
-                            arrow_right
-                        </span>
-                    </button>
-                </div>
+<div id="piechart" style="width: 900px; height: 500px;"></div>
+        <div class="swiper-slide"><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load('current', {'packages':['corechart']});
+              google.charts.setOnLoadCallback(drawChart);
+        
+              function drawChart() {
+        
+                var data = google.visualization.arrayToDataTable([
+                  ['Task', 'Hours per Day'],
+                  ['Work',     11],
+                  ['Eat',      2],
+                  ['Commute',  2],
+                  ['Watch TV', 2],
+                  ['Sleep',    7]
+                ]);
+        
+                var options = {
+                  title: 'que grafico bonito'
+                };
+        
+                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        
+                chart.draw(data, options);
+              }
+            </script></div>
 
-            </div>
-        </section>
+
+<div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+        <div class="swiper-slide"> <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load("current", {packages:["corechart"]});
+              google.charts.setOnLoadCallback(drawChart);
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Task', 'Hours per Day'],
+                  ['quem ler e gay',     11],
+                  ['se riu e viado',      2],
+                  ['se desviou o olhar e mais ainda',  2],
+                  ['meu cu', 2],
+                  ['é seu',    7]
+                ]);
+        
+                var options = {
+                  title: 'donuts',
+                  is3D: true,
+                };
+        
+                var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+                chart.draw(data, options);
+              }
+            </script></div>
+
+
+<div id="donutchart" style="width: 900px; height: 500px;"></div>
+        <div class="swiper-slide"><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['quem ler e gay',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
+
+        var options = {
+          title: 'grafico ae',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script></div>
+
+
+
+<div id="piechart" style="width: 900px; height: 500px;"></div>
+        <div class="swiper-slide"><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load("current", {packages:["corechart"]});
+              google.charts.setOnLoadCallback(drawChart);
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Language', 'Speakers (in millions)'],
+                  ['Assamese', 13], ['verme', 83], ['Bodo', 1.4],
+                  ['Dogri', 2.3], ['Gujarati', 46], ['aulzao viagra', 300],
+                  ['Kannada', 38], ['Kashmiri', 5.5], ['Konkani', 5],
+                  ['Maithili', 20], ['Malayalam', 33], ['Manipuri', 1.5],
+                  ['Marathi', 72], ['Nepali', 2.9], ['Oriya', 33],
+                  ['Punjabi', 29], ['Sanskrit', 0.01], ['Santhali', 6.5],
+                  ['Sindhi', 2.5], ['Tatu', 61], ['comi', 74], ['teu cu', 59]
+                ]);
+        
+                var options = {
+                  title: 'que grafico bonito',
+                  legend: 'none',
+                  pieSliceText: 'label',
+                  slices: {  4: {offset: 0.2},
+                            12: {offset: 0.3},
+                            14: {offset: 0.4},
+                            15: {offset: 0.5},
+                  },
+                };
+        
+                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                chart.draw(data, options);
+              }
+            </script></div>
+
+
+<div id="pacman" style="width: 900px; height: 500px;"></div>
+        <div class="swiper-slide"><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load("current", {packages:["corechart"]});
+              google.charts.setOnLoadCallback(drawChart);
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Pac Man', 'Percentage'],
+                  ['', 75],
+                  ['', 25]
+                ]);
+        
+                var options = {
+                  legend: 'none',
+                  pieSliceText: 'none',
+                  pieStartAngle: 135,
+                  tooltip: { trigger: 'none' },
+                  slices: {
+                    0: { color: 'yellow' },
+                    1: { color: 'transparent' }
+                  }
+                };
+        
+                var chart = new google.visualization.PieChart(document.getElementById('pacman'));
+                chart.draw(data, options);
+              }
+            </script></div>
+
+
+<div id="chart_div" style="width: 900px; height: 500px;"></div>
+        <div class="swiper-slide"><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load('current', {'packages':['corechart']});
+              google.charts.setOnLoadCallback(drawVisualization);
+        
+              function drawVisualization() {
+                // Some raw data (not necessarily accurate)
+                var data = google.visualization.arrayToDataTable([
+                  ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'],
+                  ['2004/05',  165,      938,         522,             998,           450,      614.6],
+                  ['2005/06',  135,      1120,        599,             1268,          288,      682],
+                  ['2006/07',  157,      1167,        587,             807,           397,      623],
+                  ['2007/08',  139,      1110,        615,             968,           215,      609.4],
+                  ['2008/09',  136,      691,         629,             1026,          366,      569.6]
+                ]);
+        
+                var options = {
+                  title : 'Monthly Coffee Production by Country',
+                  vAxis: {title: 'Cups'},
+                  hAxis: {title: 'Month'},
+                  seriesType: 'bars',
+                  series: {5: {type: 'line'}}
+                };
+        
+                var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+              }
+            </script></div>
+        <div class="swiper-slide"><img class="img-carrosel" src="http://occ-0-2321-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABax8tF9O-i_1eWT24E0D7R3cU8hG9A8QguHYX2qEH12H2PnKwt4A4DeipWuctJQPttZWvCb3dXd8sAiw-oW9X-yM1nnEkVAYHao.webp?r=094" alt=""></div>
+        <div class="swiper-slide"><img class="img-carrosel" src="http://occ-0-2321-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABah7lStUvgtHQK4dBlCNXrReLRpI8sV4q8_IREhVImBzDZL1dDurMdHwpGfYAnw_wg8dza5nggtZlAepdFJPW3VqnvCaUtp3iXA.webp?r=1e2" alt=""></div>
+        <div class="swiper-slide"><img class="img-carrosel" src="https://occ-0-2321-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSVh4y_v_Unh2kUbXYF-4Jr4-HL-1XFtONnLGjck5DYPaxMIjwi5OudI7e21vTNo_x6FcuP063ZOKq3-f1JRz5tInMR_pHEr6sY.webp?r=3ad" alt=""></div>
+        <div class="swiper-slide"><img class="img-carrosel" src="https://occ-0-2321-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABb_2-brBZG6FDCqIfY2VQxzkxFjM-3csGK2FP5KlCp_h1quSzRNH1qYcZuir2y8vzJsGI-FyxJsCBxDTBgNIpmRsphiBDNzUjO5rj3hDTb_mydS_d6YOuHl_IXWuIHmqzVvuxKssXjIdSDyeBXhGKhOJFTDx-ToE3mCCque1njzQFg4JBeRD_KVxaYjX8VLyNOptF16Ii5gDGuUssP5o4SYu0ianI89rEFQGKVeptsqfQbiQoF9jn-Hl9i2FuPEFZXZvjVzQCTqW8UNVBIDhLFswN15Vvd36qKFBz__eyXEwrtL5fIjn9mdTusygkM7F0yEd_4szjPrcr3FKJyPFtE-MCef5EBa_5oa0ryMXFkZMHAx1i7Cl3w.jpg?r=9fd" alt=""></div>
+        <div class="swiper-slide"><img class="img-carrosel" src="https://occ-0-2321-559.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABb9r_YwWbuPJsI8V6MH3OpjHskSMrjUhvOLnww2WpDO-yRNtRGHzCmwYs8tyA6EPvkxFx9Fi2T-MswccmSjOafeBnt_K03LYJfUW4DlKmzPhMLkVYOj0YSMrgGg4Vk80X4f9.jpg?r=42a" alt=""></div>
+        <div class="swiper-slide"><img src="oculos 2.jfif" alt="livro sobre Gestão"></div>
+        
+        
+        </div>
+        
+        
+        
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+        
+        </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script><!--importação do js-->
+<script>const swiper = new Swiper('.swiper', {
+    
+    spaceBetween: -600,
+    slidesPerView: 1,
+    pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    },
+  });</script><!--codigo da aba initialize swiper, que é usado para mostrar o swiper, slideperview serve para separar qunatas iamgem ira aparecer. o de 400 é quando é para automatico-->
+
 
     <script src="carrossel.js"></script>
 </body>
