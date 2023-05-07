@@ -81,7 +81,7 @@ body {
 }
 
 #cabecalho #links {
-    font-size: max(1.6rem, 1.5vw);
+    font-size: max(1.6rem, 1.2vw);
     display: flex;
     align-items: center;
     gap: 1vw;
@@ -113,7 +113,7 @@ body {
 }
 
 #menu-lista .item {
-    font-size: max(1.6rem, 1.5vw);
+    font-size: max(1.6rem, 1.2vw);
     color: white;
     text-decoration: none;
     padding: 2.5vh 2vw;
@@ -148,9 +148,10 @@ main .topo {
     height: 100%;
 }
 
-.botoes-topo, .botoes-fim {
+.botoes-topo, 
+.botoes-fim {
     width: 100%;
-    padding: .5em;
+    padding: 1vh 1vw;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -188,11 +189,11 @@ section {
     padding: 1vh 2vw;
     display: flex;
     flex-direction: column;
-    gap: 3vh;
+    gap: 5vh;
 }
 
 .article {
-    max-width: 70vw;
+    max-width: 65vw;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -214,11 +215,11 @@ section {
 }
 
 .article-info .titulo {
-    font-size: max(2.4rem, 1.6vw);
+    font-size: max(2.4rem, 1.2vw);
 }
 
 .article-info .texto {
-    font-size: max(1.6rem, 1.2vw);
+    font-size: max(1.6rem, 1.1vw);
     text-indent: max(1.6rem, 1.5vw);
 }
 
@@ -231,7 +232,7 @@ section {
 }
 
 #mapa .titulo, #graficos .titulo {
-    font-size: max(2.4rem, 1.6vw);
+    font-size: max(2.4rem, 1.4vw);
     text-align: center;
     color: var(--cor03);
 }
@@ -275,7 +276,12 @@ section {
     gap: 2vh;
 }
 
+#rodape div .titulo {
+    font-size: max(1.2rem, 1.2vw);
+}
+
 #rodape ul {
+    font-size: max(1rem, 1vw);
     list-style: none;
     color: gray;
     display: flex;
