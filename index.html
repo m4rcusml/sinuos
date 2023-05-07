@@ -2,86 +2,234 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SINUOS</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SINUOS</title>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <button id="logo">
-            <span class="material-symbols-outlined icone">
-                menu
-            </span>
-            <h1 class="text-logo">
-                SINUOS
-            </h1>
-        </button>
+	<header id="cabecalho">
+		<button id="menu-button">
+			<span class="material-symbols-outlined">
+				menu
+			</span>
+		</button>
 
-        <div class="links">
-            <a href="#">Link direto</a>
-            <a href="#">Link direto</a>
-            <a href="#">Link direto</a>
-        </div>
+		<div id="links">
+			<a href="#">Link direto</a>
+			<a href="#">Link direto</a>
+			<a href="#">Participantes</a>
+		</div>
 
-        <button id="btn-conta">
-            <span class="nome-usuario">nome de usuário</span>
-            <span class="material-symbols-outlined icone">
-                account_circle
-            </span>
-        </button>
-    </header>
+		<button>
+			<span class="material-symbols-outlined">
+				account_circle
+			</span>
+		</button>
+	</header>
+	<nav id="menu" class="aberto">
+		<div id="menu-lista">
+			<a href="index.html" class="item selecionado">Início</a>
+			<a href="#" class="item">Link</a>
+			<a href="#" class="item">Link</a>
+			<a href="#" class="item">Link</a>
+			<a href="#" class="item">Link</a>
+			<a href="#" class="item">Link</a>
+			<a href="#" class="item">Link</a>
+		</div>
+		<div>
 
-    <main>
-        <section class="mapa">
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15936.029210655384!2d-59.9681458!3d-3.0927149499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1681438220771!5m2!1sen!2sbr"
-                    width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-                <details id="filtros">
-                    <summary>Filtros</summary>
-                    <p>Algumas opções de filtros serão adicionadas aqui</p>
-                </details>
-            </div>
-        </section>
+		</div>
+	</nav>
+	<main>
+		<div class="topo">
+			<img src="imgs/logo1.jpeg" alt="">
+		</div>
+		<div class="botoes-topo">
+			<button id="mostrar-mapa">
+				<a href="#mapa">
+					<span class="material-symbols-outlined">
+						arrow_downward
+					</span>
+				</a>
+			</button>
+		</div>
 
-        <section class="graficos">
-            <h2>Alguns gráficos e tal</h2>
-            <div class="graficos-container carrossel">
+		<section id="articles-lista">
 
-                <div class="imagens">
-                    <img src="imgs/grafico1.svg">
-                    <img src="imgs/grafico2.svg">
-                    <img src="imgs/grafico3.svg">
-                    <img src="imgs/grafico1.svg">
-                    <img src="imgs/grafico2.svg">
-                    <img src="imgs/grafico3.svg">
-                </div>
+			<article class="article">
+				<div class="article-imagem">
+					<img src="" alt="">
+				</div>
+				<div class="article-info">
+					<a href="#" class="titulo">Problemas relacionados à água</a>
+					<div class="texto">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur, voluptate eum,
+							aut accusantium praesentium consequatur voluptas earum enim delectus ad nam dolore odit
+							minima, magnam at eaque commodi fuga!
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis dolores, ex
+							quibusdam dolor ullam fugit dignissimos vel aspernatur! Est ad voluptate deserunt qui odio
+							reprehenderit quidem eos molestiae at.
+						</p>
+					</div>
+				</div>
+			</article>
 
-                <div class="navegacao">
-                    <button class="btn-left">
-                        <span class="material-symbols-outlined">
-                            arrow_left
-                        </span>
-                    </button>
-                    <button class="btn-right">
-                        <span class="material-symbols-outlined">
-                            arrow_right
-                        </span>
-                    </button>
-                </div>
+			<article class="article">
+				<div class="article-imagem">
+					<img src="" alt="">
+				</div>
+				<div class="article-info">
+					<a href="#" class="titulo">O que o nosso projeto pretende fazer</a>
+					<div class="texto">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur, voluptate eum,
+							aut accusantium praesentium consequatur voluptas earum enim delectus ad nam dolore odit
+							minima, magnam at eaque commodi fuga!
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis dolores, ex
+							quibusdam dolor ullam fugit dignissimos vel aspernatur! Est ad voluptate deserunt qui odio
+							reprehenderit quidem eos molestiae at. Apabisacs sjcpakso
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis dolores, ex
+							quibusdam dolor ullam fugit dignissimos vel aspernatur! Est ad voluptate deserunt qui odio
+							reprehenderit quidem eos molestiae at.
+						</p>
+					</div>
+				</div>
+			</article>
 
-            </div>
-        </section>
-    </main>
+			<article class="article">
+				<div class="article-imagem">
+					<img src="" alt="">
+				</div>
+				<div class="article-info">
+					<a href="#" class="titulo">Informações sobre a equipe</a>
+					<div class="texto">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur, voluptate eum,
+							aut accusantium praesentium consequatur voluptas earum enim delectus ad nam dolore odit
+							minima, magnam at eaque commodi fuga!
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis dolores, ex
+							quibusdam dolor ullam fugit dignissimos vel aspernatur! Est ad voluptate deserunt qui odio
+							reprehenderit quidem eos molestiae at.
+						</p>
+					</div>
+				</div>
+			</article>
 
-    <script src="carrossel.js"></script>
+		</section>
+
+		<section id="mapa">
+			<h2 class="titulo">Vizualização da água em nossa cidade</h2>
+
+			<div id="mapa-container">
+				<!-- O MAPA É PRA SER COLOCADO DENtRO DESSA DIV -->
+
+			</div>
+		</section>
+
+		<section id="graficos">
+			<h2 class="titulo">Graficos</h2>
+
+			<div id="carrossel-graficos">
+				<!-- O CARROSSEL COM OS GRAFICOS DEVE SER ADICIONADO AQUI-->
+			</div>
+		</section>
+
+		<div class="botoes-fim">
+			<button id="ir-para-topo">
+				<a href="#">
+					<span class="material-symbols-outlined">
+						arrow_upward
+					</span>
+				</a>
+			</button>
+		</div>
+		<footer id="rodape">
+			<div>
+				<h4>Sample text</h4>
+				<ul>
+					<li>
+						[link ou qualquer outra coisa]
+					</li>
+					<li>
+						[link ou qualquer outra coisa]
+					</li>
+					<li>
+						[link ou qualquer outra coisa]
+					</li>
+					<li>
+						[link ou qualquer outra coisa]
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h4>Sample text</h4>
+				<ul>
+					<li>
+						[link ou qualquer outra coisa]
+					</li>
+					<li>
+						[link ou qualquer outra coisa]
+					</li>
+					<li>
+						[link ou qualquer outra coisa]
+					</li>
+					<li>
+						[link ou qualquer outra coisa]
+					</li>
+				</ul>
+			</div>
+
+			<div id="copyright">
+				<p>&copy;Copyright - SINUOS</p>
+			</div>
+		</footer>
+	</main>
+
+	<script>
+		const itensMenu = document.querySelectorAll('#menu-lista .item')
+		const menuBar = document.querySelector('#menu')
+		const menuButton = document.querySelector('#menu-button')
+		const topoButton = document.querySelector('#ir-para-topo')
+
+		topoButton.addEventListener('click', () => {
+			document.querySelector('main').scroll(0, 0)
+		})
+
+		menuButton.addEventListener('click', () => {
+			menuBar.classList.toggle('aberto')
+			if (menuBar.classList.contains('aberto')) {
+				document.body.style.gridTemplateColumns = '20vw 1fr'
+				menubar.style.left = '0'
+			} else {
+				document.body.style.gridTemplateColumns = '0 1fr'
+				menubar.style.left = '-20vw'
+			}
+		})
+
+		itensMenu.forEach(i => {
+			i.addEventListener('click', () => {
+				itensMenu.forEach(j => {
+					j.classList.remove('selecionado')
+				})
+				i.classList.add('selecionado')
+			})
+		});
+
+	</script>
 </body>
 
 </html>
