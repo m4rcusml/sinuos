@@ -8,7 +8,8 @@
 	<title>SINUOS</title>
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="estilos/style.css">
+	<link rel="stylesheet" href="estilos/inicio.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
 		<div id="links">
 			<a href="#">Link direto</a>
 			<a href="#">Link direto</a>
-			<a href="#">Participantes</a>
+			<a href="participantes.html">Participantes</a>
 		</div>
 
 		<button>
@@ -199,34 +200,14 @@
 		</footer>
 	</main>
 
+	<script src="scripts/menu.js"></script>
 	<script>
-		const itensMenu = document.querySelectorAll('#menu-lista .item')
-		const menuBar = document.querySelector('#menu')
-		const menuButton = document.querySelector('#menu-button')
+		const url = window.location.href.endsWith('index.html')
+		console.log(url)
 		const topoButton = document.querySelector('#ir-para-topo')
-
 		topoButton.addEventListener('click', () => {
 			document.querySelector('main').scroll(0, 0)
 		})
-
-		menuButton.addEventListener('click', () => {
-			menuBar.classList.toggle('aberto')
-			if (menuBar.classList.contains('aberto')) {
-				document.body.style.gridTemplateColumns = '20vw 1fr'
-			} else {
-				document.body.style.gridTemplateColumns = '0 1fr'
-			}
-		})
-
-		itensMenu.forEach(i => {
-			i.addEventListener('click', () => {
-				itensMenu.forEach(j => {
-					j.classList.remove('selecionado')
-				})
-				i.classList.add('selecionado')
-			})
-		});
-
 	</script>
 </body>
 
