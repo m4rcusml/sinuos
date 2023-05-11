@@ -1,0 +1,60 @@
+
+section {
+    margin: 3vh 0;
+}
+
+#articles-lista {
+    padding: 1vh 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.article {
+    max-width: 65vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2vw;
+}
+
+.article-imagem {
+    background-color: gray;
+    border-radius: 1em;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+
+.article-info {
+    padding: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.article-info .titulo {
+    font-size: max(2.4rem, 1.2vw);
+}
+
+.article-info .texto {
+    font-size: max(1.6rem, 1.1vw);
+    text-indent: max(1.6rem, 1.5vw);
+}
+
+#mapa, #graficos {
+    height: 70vh;
+    padding: 2vh 2vw;
+    display: grid;
+    grid-template-rows: auto 3fr;
+    gap: 2vh;
+}
+
+#mapa .titulo, #graficos .titulo {
+    font-size: max(2.4rem, 1.4vw);
+    text-align: center;
+    color: var(--cor03);
+}
+
+#mapa-container, #carrossel-graficos {
+    background-color: gray;
+}
