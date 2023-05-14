@@ -1,0 +1,65 @@
+#participantes {
+    padding: 1em .5em;
+}
+
+#participantes > .titulo {
+    margin: 1em 0;
+    font-size: max(2.4rem, 1.4vw);
+    text-align: center;
+    color: var(--cor03);
+}
+
+#participantes .lista {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.lista > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.lista > div:nth-of-type(2) {
+    gap: .5em;
+}
+
+.lista .item {
+    max-width: 15vw;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.lista .item .imagem {
+    min-width: 240px;
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    mix-blend-mode: color-burn;
+    border-radius: 50%;
+}
+
+.lista .item .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info * {
+    text-align: center;
+}
+
+.nome {
+    font-size: max(2.2rem, 1.4vw);
+}
+
+.cargo {
+    font-size: max(1.3rem, .8vw);
+}
