@@ -63,9 +63,9 @@ section {
 }
 
 #mapa-container iframe {
-    width: 100%;
+    width: 60%;
     height: 100%;
-    aspect-ratio: 20 / 9;
+    aspect-ratio: 16 / 9;
 }
 
 @media screen and (max-width:768px) {
@@ -80,6 +80,7 @@ section {
     }
     .article-imagem, #mapa-container iframe {
         aspect-ratio: 16 / 9;
+        width: 100%;
     }
     .article-info {
         padding: 1rem;
@@ -96,5 +97,6 @@ section {
 @media screen and (max-width:425px) {
     #mapa-container iframe {
         aspect-ratio: 1 / 1;
+        width: 100%;
     }
 }
