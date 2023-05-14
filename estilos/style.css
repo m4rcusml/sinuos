@@ -2,18 +2,18 @@
 
 @font-face {
     font-family: Now;
-    src: url(fontes/now/Now-Light.otf);
+    src: url(../fontes/now/Now-Light.otf);
     font-weight: 200;
 }
 
 @font-face {
     font-family: Now;
-    src: url(fontes/now/Now-Regular.otf);
+    src: url(../fontes/now/Now-Regular.otf);
 }
 
 @font-face {
     font-family: Now;
-    src: url(fontes/now/Now-Bold.otf);
+    src: url(../fontes/now/Now-Bold.otf);
     font-weight: 800;
 }
 
