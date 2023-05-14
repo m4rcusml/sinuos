@@ -43,13 +43,13 @@ body {
     grid-template-areas:
         "header header"
         "menu main";
-    grid-template-columns: 20vw 1fr;
+    grid-template-columns: 0 1fr;
     grid-template-rows: 10vh 1fr;
     transition: all 200ms;
 }
 
 #cabecalho {
-    z-index: 1;
+    z-index: 10;
     grid-area: header;
     min-height: 10vh;
     padding: 0 2vh;
@@ -89,6 +89,7 @@ body {
 }
 
 #menu {
+    z-index: 9;
     position: relative;
     background-color: var(--cor03);
     grid-area: menu;
@@ -117,7 +118,7 @@ body {
     font-size: max(1.6rem, 1.5vw);
     color: white;
     text-decoration: none;
-    padding: 2.5vh 2vw;
+    padding: 2.5vh 3vw;
     transition: all 200ms;
 }
 
@@ -256,4 +257,52 @@ main .topo {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    #menu {
+        position: absolute;
+        width: 200px;
+        top: 10vh;
+        left: -200px;
+        bottom: 0;
+    }
+    #menu.aberto {
+        left: 0;
+    }
+    #menu * {
+        left: -200px;
+    }
+    #menu.aberto * {
+        left: 0;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #menu {
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        right: 0;
+        top: -100vh;
+        bottom: auto;
+    }
+    #menu * {
+        top: -100vh;
+    }
+    #menu.aberto {
+        top: 10vh;
+    }
+    #menu.aberto * {
+        top: 10vh;
+    }
+    #menu-lista .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-lista .item.selecionado {
+        border: none;
+        font-weight: bold;
+    }
 }
