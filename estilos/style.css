@@ -43,13 +43,13 @@ body {
     grid-template-areas:
         "header header"
         "menu main";
-    grid-template-columns: 20vw 1fr;
+    grid-template-columns: 0 1fr;
     grid-template-rows: 10vh 1fr;
     transition: all 200ms;
 }
 
 #cabecalho {
-    z-index: 1;
+    z-index: 10;
     grid-area: header;
     min-height: 10vh;
     padding: 0 2vh;
@@ -89,6 +89,7 @@ body {
 }
 
 #menu {
+    z-index: 9;
     position: relative;
     background-color: var(--cor03);
     grid-area: menu;
@@ -117,7 +118,7 @@ body {
     font-size: max(1.6rem, 1.5vw);
     color: white;
     text-decoration: none;
-    padding: 2.5vh 2vw;
+    padding: 2.5vh 3vw;
     transition: all 200ms;
 }
 
@@ -138,7 +139,7 @@ main {
 }
 
 main::-webkit-scrollbar {
-    width: .8vw;
+    width: 1rem;
 }
 
 main::-webkit-scrollbar-track {
@@ -161,6 +162,8 @@ main .topo {
 
 .topo img {
     height: 100%;
+    max-width: 100%;
+    aspect-ratio:  1 / 1;;
 }
 
 .botoes-topo, 
@@ -186,7 +189,7 @@ main .topo {
 
 .botoes-topo button .material-symbols-outlined, 
 .botoes-fim button .material-symbols-outlined {
-    font-size: max(3.2rem, 3vw);
+    font-size: max(4.8rem, 2.8vw);
     color: white;
     transition: all 200ms;
 }
@@ -228,7 +231,7 @@ main .topo {
 #rodape div {
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 2em;
 }
 
 #rodape div .titulo {
@@ -250,10 +253,72 @@ main .topo {
 }
 
 #copyright {
+    font-size: max(1.2rem, 1vw);
     grid-area: copyright;
     justify-self: stretch;
     height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    #menu {
+        position: absolute;
+        width: 200px;
+        top: 10vh;
+        left: -200px;
+        bottom: 0;
+    }
+    #menu.aberto {
+        left: 0;
+    }
+    #menu * {
+        left: -200px;
+    }
+    #menu.aberto * {
+        left: 0;
+    }
+    main::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #menu {
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        right: 0;
+        top: -100vh;
+        bottom: auto;
+        transition: none;
+    }
+    #menu * {
+        top: -100vh;
+        transition: none;
+    }
+    #menu.aberto {
+        top: 10vh;
+        transition: none;
+    }
+    #menu.aberto * {
+        top: 10vh;
+        transition: none;
+    }
+    #menu-lista .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-lista .item.selecionado {
+        border: none;
+        font-weight: bold;
+    }
+    #rodape {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 2em;
+    }
 }
