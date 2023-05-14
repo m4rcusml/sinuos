@@ -10,6 +10,7 @@
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet" href="estilos/style.css">
 	<link rel="stylesheet" href="estilos/inicio.css">
+	<link rel="stylesheet" href="estilos/carrossel.css">
 </head>
 
 <body>
@@ -140,9 +141,28 @@
 		<section id="graficos">
 			<h2 class="titulo">Graficos</h2>
 
-			<div id="carrossel-graficos">
-				<!-- O CARROSSEL COM OS GRAFICOS DEVE SER ADICIONADO AQUI-->
-			</div>
+			<div class="graficos-container carrossel">
+
+                <div class="imagens">
+                    <img src="imgs/Carlos.jpeg">
+                    <img src="imgs/Emerson.jpeg">
+                    <img src="imgs/Marcus.jpg">
+                </div>
+
+                <div class="navegacao">
+                    <button class="btn-left">
+                        <span class="material-symbols-outlined">
+                            arrow_left
+                        </span>
+                    </button>
+                    <button class="btn-right">
+                        <span class="material-symbols-outlined">
+                            arrow_right
+                        </span>
+                    </button>
+                </div>
+
+            </div>
 		</section>
 
 		<div class="botoes-fim">
@@ -197,6 +217,7 @@
 	</main>
 
 	<script src="scripts/geral.js"></script>
+	<script src="scripts/carrossel.js"></script>
 </body>
 
 </html>
