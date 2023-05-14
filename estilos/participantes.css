@@ -21,11 +21,12 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 2em;
+    align-items: stretch;
+    gap: 3em;
 }
 
 .lista > div:nth-of-type(2) {
-    gap: .5em;
+    gap: 1em;
 }
 
 .lista .item {
@@ -34,6 +35,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     gap: 1em;
 }
 
@@ -42,7 +44,6 @@
     width: 80%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    mix-blend-mode: color-burn;
     border-radius: 50%;
 }
 
