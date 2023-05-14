@@ -139,7 +139,7 @@ main {
 }
 
 main::-webkit-scrollbar {
-    width: .8vw;
+    width: 1rem;
 }
 
 main::-webkit-scrollbar-track {
@@ -187,7 +187,7 @@ main .topo {
 
 .botoes-topo button .material-symbols-outlined, 
 .botoes-fim button .material-symbols-outlined {
-    font-size: max(3.2rem, 3vw);
+    font-size: max(4.8rem, 2.8vw);
     color: white;
     transition: all 200ms;
 }
@@ -276,6 +276,9 @@ main .topo {
     #menu.aberto * {
         left: 0;
     }
+    main::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 @media screen and (max-width:425px) {
@@ -286,15 +289,19 @@ main .topo {
         right: 0;
         top: -100vh;
         bottom: auto;
+        transition: none;
     }
     #menu * {
         top: -100vh;
+        transition: none;
     }
     #menu.aberto {
         top: 10vh;
+        transition: none;
     }
     #menu.aberto * {
         top: 10vh;
+        transition: none;
     }
     #menu-lista .item {
         display: flex;

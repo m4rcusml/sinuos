@@ -1,5 +1,5 @@
 function getResolucao() {
-    const resolucao = window.screen.width
+    const resolucao = window.innerWidth
     return resolucao
 }
 
