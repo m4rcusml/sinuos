@@ -10,7 +10,9 @@
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet" href="estilos/style.css">
 	<link rel="stylesheet" href="estilos/inicio.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="estilos/carrossel.css">
+	<link rel="icon" href="lg.alt7 (1).jpeg"image/x-icon">
 </head>
 
 <body>
@@ -59,47 +61,33 @@
 
 			<article class="article">
 				<div class="article-imagem">
-					<img src="" alt="">
+					<img src="consequencia-poluicao-agua.webp" alt="">
 				</div>
 				<div class="article-info">
 					<a href="#" class="titulo">Problemas relacionados à água</a>
 					<div class="texto">
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur, voluptate eum,
-							aut accusantium praesentium consequatur voluptas earum enim delectus ad nam dolore odit
-							minima, magnam at eaque commodi fuga!
+							A geomoforlogia fluvial do estado do Amazonas é marcada por afluentes, rios, córregos e igarapés perenes e sinuosos, que, apesar do seu grau de importância tanto para a flora e fauna da região, são constantemente alvo de despejo de inúmeras formas de poluição química e sólida.
 						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis dolores, ex
-							quibusdam dolor ullam fugit dignissimos vel aspernatur! Est ad voluptate deserunt qui odio
-							reprehenderit quidem eos molestiae at.
-						</p>
+			
 					</div>
 				</div>
 			</article>
 
 			<article class="article">
 				<div class="article-imagem">
-					<img src="" alt="">
+					<img  src="I N U O S (1).png" alt="">
 				</div>
 				<div class="article-info">
 					<a href="#" class="titulo">O que o nosso projeto pretende fazer</a>
 					<div class="texto">
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur, voluptate eum,
-							aut accusantium praesentium consequatur voluptas earum enim delectus ad nam dolore odit
-							minima, magnam at eaque commodi fuga!
+							Baseado nisso, o projeto SINUOS surgiu com a proposta de colaborar com os  órgãos governamentais, CONAMA e o projeto Prosamim, responsáveis pelo monitoramento e regulação do IQA (Índice de Qualidade da Água) dos corpos hídricos da Rede Metropolitana de Manaus.
 						</p>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis dolores, ex
-							quibusdam dolor ullam fugit dignissimos vel aspernatur! Est ad voluptate deserunt qui odio
-							reprehenderit quidem eos molestiae at. Apabisacs sjcpakso
+							através de um sistema autônomo capaz de mapear os igarapés em processos de revitalização, disponibilizando dados de pH, temperatura, TDS e localização por meio de um banco de dados seguro e confiável.
 						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis dolores, ex
-							quibusdam dolor ullam fugit dignissimos vel aspernatur! Est ad voluptate deserunt qui odio
-							reprehenderit quidem eos molestiae at.
-						</p>
+	
 					</div>
 				</div>
 			</article>
@@ -112,14 +100,10 @@
 					<a href="#" class="titulo">Informações sobre a equipe</a>
 					<div class="texto">
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur, voluptate eum,
-							aut accusantium praesentium consequatur voluptas earum enim delectus ad nam dolore odit
-							minima, magnam at eaque commodi fuga!
+							Equipe: MECATRONICA: Manuela, Rafaella, Márcia.
 						</p>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis dolores, ex
-							quibusdam dolor ullam fugit dignissimos vel aspernatur! Est ad voluptate deserunt qui odio
-							reprehenderit quidem eos molestiae at.
+							Equipe: INFORMATICA: Marcus Felipe, Davi Almeida, Carlos Daniel.
 						</p>
 					</div>
 				</div>
@@ -143,24 +127,119 @@
 
 			<div class="graficos-container carrossel">
 
-                <div class="imagens">
-                    <img src="imgs/Carlos.jpeg">
-                    <img src="imgs/Emerson.jpeg">
-                    <img src="imgs/Marcus.jpg">
-                </div>
-
-                <div class="navegacao">
-                    <button class="btn-left">
-                        <span class="material-symbols-outlined">
-                            arrow_left
-                        </span>
-                    </button>
-                    <button class="btn-right">
-                        <span class="material-symbols-outlined">
-                            arrow_right
-                        </span>
-                    </button>
-                </div>
+                <section class="carrossel">
+				
+				
+					<div class="carrossel__container">
+				<div class="swiper">
+				
+				<div class="swiper-pagination"></div>
+				
+				
+				<div class="swiper-wrapper">
+		
+		
+					<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+					<script type="text/javascript">
+					  google.charts.load("current", {packages:['corechart']});
+					  google.charts.setOnLoadCallback(drawChart);
+					  function drawChart() {
+						var data = google.visualization.arrayToDataTable([
+						  ["POLUIÇÂO", "Density", { role: "style" } ],
+						  ["PH", 8.94, "#b87333"],
+						  ["ACIDEZ", 10.49, "silver"],
+						]);
+				  
+						var view = new google.visualization.DataView(data);
+						view.setColumns([0, 1,
+										 { calc: "stringify",
+										   sourceColumn: 1,
+										   type: "string",
+										   role: "annotation" },
+										 2]);
+				  
+						var options = {
+						  title: "detalhes",
+						  width: 500,
+						  height: 400,
+						  bar: {groupWidth: "95%"},
+						  legend: { position: "none" },
+						};
+						var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+						chart.draw(view, options);
+					}
+					</script>
+				  <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+					
+		
+<div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+		
+		
+		<div id="donutchart" style="width: 900px; height: 500px;"></div>
+				<div class="swiper-slide"><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			<script type="text/javascript">
+			  google.charts.load("current", {packages:["corechart"]});
+			  google.charts.setOnLoadCallback(drawChart);
+			  function drawChart() {
+				var data = google.visualization.arrayToDataTable([
+				  ['Task', 'Hours per Day'],
+				  ['POLUIÇÂO',     11],
+				  ['PH',      2],
+				  ['ACIDEZ',  2],
+				]);
+		
+				var options = {
+				  title: 'detalhes',
+				  pieHole: 0.4,
+				};
+		
+				var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+				chart.draw(data, options);
+			  }
+			</script></div>
+		
+		
+		<div id="chart_div" style="width: 900px; height: 500px;"></div>
+				<div class="swiper-slide"><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+					<script type="text/javascript">
+					  google.charts.load('current', {'packages':['corechart']});
+					  google.charts.setOnLoadCallback(drawVisualization);
+				
+					  function drawVisualization() {
+						// Some raw data (not necessarily accurate)
+						var data = google.visualization.arrayToDataTable([
+						  ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'],
+						  ['2004/05',  165,      938,         522,             998,           450,      614.6],
+						  ['2005/06',  135,      1120,        599,             1268,          288,      682],
+						  ['2006/07',  157,      1167,        587,             807,           397,      623],
+						  ['2007/08',  139,      1110,        615,             968,           215,      609.4],
+						  ['2008/09',  136,      691,         629,             1026,          366,      569.6]
+						]);
+				
+						var options = {
+						  title : 'Monthly Coffee Production by Country',
+						  vAxis: {title: 'Cups'},
+						  hAxis: {title: 'Month'},
+						  seriesType: 'bars',
+						  series: {5: {type: 'line'}}
+						};
+				
+						var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+						chart.draw(data, options);
+					  }
+					</script></div>
+			
+				
+				
+				</div>
+				
+				
+				
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+				
+				
+				</div>
 
             </div>
 		</section>
@@ -208,6 +287,7 @@
 						[link ou qualquer outra coisa]
 					</li>
 				</ul>
+				<h2 class="ALPHA">Version: ALPHA</h2>
 			</div>
 
 			<div id="copyright">
@@ -215,6 +295,17 @@
 			</div>
 		</footer>
 	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script><!--importação do js-->
+	<script>const swiper = new Swiper('.swiper', {
+		
+		spaceBetween: -600,
+		slidesPerView: 1,
+		pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		},
+	  });</script>
 
 	<script src="scripts/geral.js"></script>
 	<script src="scripts/carrossel.js"></script>

@@ -1,5 +1,29 @@
+@keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+@keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }  
+
+  .main{
+    animation: fade-in 1.5s normal forwards ease-in-out;
+  }
+
 #participantes {
     padding: 1em .5em;
+}
+
+.ALPHA{
+    margin-left: -900px;
+    font-size: 16px;
+    color: rgb(70, 74, 74);
 }
 
 #participantes > .titulo {
@@ -7,6 +31,7 @@
     font-size: max(2.4rem, 1.4vw);
     text-align: center;
     color: var(--cor03);
+    animation: go-back 2s;
 }
 
 #participantes .lista {
@@ -37,6 +62,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 1em;
+    animation: go-back 2.5s;
 }
 
 .lista .item .imagem {
@@ -45,6 +71,7 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;
+    animation: go-back 2.5s;
 }
 
 .lista .item .info {
