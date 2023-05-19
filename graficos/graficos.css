@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+div {
+    aspect-ratio: 16 / 9;
+}
+
+@media screen and (max-width:425px) {
+    #chart-div, #chart-div * {
+        aspect-ratio: 1 / 1;
+        height: 100%;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Dia', 'Temperatura'],
+                ['1', 27],
+                ['2', 24],
+                ['3', 29],
+                ['4', 22]
+            ]);
+
+            var options = {
+                title: 'Temperatura nas últimas 4 semanas',
+                hAxis: { title: 'Semanas', titleTextStyle: { color: '#f00' } },
+                vAxis: { minValue: 0 }
+            };
+
+            var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
+    <link rel="stylesheet" href="graficos.css">
+</head>
+
+<body>
+    <div id="chart_div"></div>
+</body>
+
+</html>
