@@ -173,6 +173,7 @@ main .topo {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 1em;
 }
 
 .botoes-topo button, .botoes-fim button {
@@ -194,8 +195,8 @@ main .topo {
     transition: all 200ms;
 }
 
-.botoes-topo button:hover .material-symbols-outlined, 
-.botoes-fim button:hover .material-symbols-outlined {
+.botoes-topo button:active .material-symbols-outlined, 
+.botoes-fim button:active .material-symbols-outlined {
     color: black;
 }
 

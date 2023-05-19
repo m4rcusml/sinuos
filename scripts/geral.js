@@ -29,8 +29,6 @@ itensMenu.forEach(i => {
     })
 });
 
-const url = window.location.href.endsWith('index.html')
-console.log(url)
 const topoButton = document.querySelector('#ir-para-topo')
 topoButton.addEventListener('click', () => {
     document.querySelector('main').scroll(0, 0)
