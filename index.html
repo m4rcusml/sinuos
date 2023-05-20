@@ -28,16 +28,30 @@
 	</header>
 	<nav id="menu">
 		<div id="menu-lista">
-			<a href="index.html" class="item selecionado">Início</a>
+			<a href="index.html" class="item selecionado">
+				<span class="material-symbols-outlined">
+					home
+				</span>
+				Início
+			</a>
 			<a href="#" class="item">Link</a>
 			<a href="#" class="item">Link</a>
 			<a href="#" class="item">Link</a>
 			<a href="#" class="item">Link</a>
-			<a href="#" class="item">Link</a>
-			<a href="participantes.html" class="item">Participantes</a>
+			<a href="participantes.html" class="item">
+				<span class="material-symbols-outlined">
+					groups
+				</span>
+				Participantes
+			</a>
 		</div>
-		<div>
-
+		<div id="reportar-erro">
+			<button id="btn-reportar-erro" class="item">
+				<span class="material-symbols-outlined">
+					bug_report
+				</span>
+				Reportar erro
+			</button>
 		</div>
 	</nav>
 	<main>
@@ -138,8 +152,10 @@
 
 			<div id="mapa-container">
 				<!-- O MAPA É PRA SER COLOCADO DENtRO DESSA DIV -->
-				<iframe src="https://www.google.com/maps/d/embed?mid=1u4hhyYTja7YUsPgXzH65P6WP3RPYayQ&hl=pt-BR&ehbc=2E312F" width="640" height="480"></iframe>
-					<!-- Seu dispositivo não é compatível -->
+				<iframe
+					src="https://www.google.com/maps/d/embed?mid=1u4hhyYTja7YUsPgXzH65P6WP3RPYayQ&hl=pt-BR&ehbc=2E312F"
+					width="640" height="480"></iframe>
+				<!-- Seu dispositivo não é compatível -->
 				</iframe>
 			</div>
 		</section>
@@ -159,7 +175,7 @@
 					arrow_right
 				</button>
 			</div>
-			
+
 		</section>
 
 		<div class="botoes-fim">
@@ -214,8 +230,8 @@
 	</main>
 
 	<script src="scripts/geral.js"></script>
-	<script src="scripts/carrossel.js"></script>
 	<script src="scripts/graficos.js"></script>
+	<script src="scripts/reportar.js"></script>
 </body>
 
 </html>
