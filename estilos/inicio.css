@@ -1,4 +1,19 @@
+@keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+@keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
+
 section {
+    animation: fade-in 1.5s normal forwards ease-in-out;
     margin: 3vh 0;
 }
 
@@ -15,6 +30,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2vw;
+    animation: go-back 2s;
 }
 
 .article-imagem {
@@ -70,7 +86,7 @@ section {
 }
 
 #mapa-container, #graficos-container {
-    background-color: gray;
+
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -122,6 +138,10 @@ section {
 
 .navegacao .material-symbols-outlined {
     font-size: max(3.2rem, 2.4vw);
+}
+
+a{
+    text-decoration: none;
 }
 
 @media screen and (max-width:768px) {

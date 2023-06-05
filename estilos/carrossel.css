@@ -1,0 +1,47 @@
+.carrosel__titulo{
+    color: #000000;
+   
+   display: flex;
+   justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: white;
+}
+
+.swiper-pagination{/*sao as plinhas que mostra em qual bloco esta*/
+    margin: em 10em 4em 10em;
+}
+
+
+.swiper-button-prev{
+    
+    padding: 10px 80px 80px 10px;
+    opacity: 0.7;
+    
+}
+
+.swiper-button-next{
+    
+    padding: 10px 10px 60px 10px;
+    opacity: 0.9;
+   
+}
+
+.carrossel__container{
+    display: flex;
+    margin: 0 20vw 3em 20vw;
+    align-items: center;
+}
+
+.swiper-pagination{
+    margin: 4em 0;
+}
+
+.swiper{
+    width: 100%;
+}
