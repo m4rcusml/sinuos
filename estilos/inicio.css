@@ -10,7 +10,7 @@ section {
 }
 
 .article {
-    max-width: 65vw;
+    width: 65vw;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -70,7 +70,6 @@ section {
 }
 
 #mapa-container, #graficos-container {
-    background-color: gray;
     display: flex;
     justify-content: center;
     align-items: stretch;
