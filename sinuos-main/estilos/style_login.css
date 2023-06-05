@@ -1,0 +1,160 @@
+@keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor01: #141F51;
+    --cor02: #6E9DC9;
+    --cor03: #528F92;
+    --cor04: #6EC2C6;
+    --cor05: #98D4E0;
+}
+
+body{
+    font-family: sans-serif;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    display: flex;
+}
+
+.cor{
+    background: rgb(152,212,224);
+    background: linear-gradient(90deg, rgba(110,194,198,1) 10%, rgba(152,212,224,1) 40%,   rgba(255,255,255,1) 80%);
+    padding: 6vw 0px;
+    padding-bottom: 13.5vw;
+    background-image: var();
+}
+
+
+
+.div-informações{
+    margin-left: 9vw;
+}
+
+h1{
+    color: var(--cor01);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+h2{
+    color: var(--cor01);
+    margin-left: 1.5vw;
+    margin-top: 0.5vh ;
+    margin-bottom: 2vh;
+}
+
+p{
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.p-info{
+    margin-top: 0.3vh;
+}
+
+.p-info2{
+    margin-bottom: 2vh;
+    font-weight: 500;
+}
+
+.img-info{
+    height: 13vh;
+    border-radius: 7px;
+    margin: 2px;
+}
+
+.img-homem{
+    margin-left: 6vw;
+    margin-bottom: 4vh;
+}
+
+.ul-info{
+    margin-bottom:2vh ;
+}
+
+.listas-info{
+    margin-left: 2.8vw;
+    margin-top: 0.5vh;
+}
+
+
+
+.login{
+    border: 2px solid #000000;
+    margin: -61.5vh 0px 0px 56vw;
+    background: rgba(253, 251, 251, 0.75);
+    width: 22vw;
+    height: 50vh;
+}
+
+.img_login{
+    padding: 2vh 7.72vw;
+    background-color: var(--cor04);
+}
+
+.div_email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gmail_campo{
+    margin-top: 7vh;
+    margin-bottom: 3px;
+   padding: 1vh 3vw;
+}
+
+.gmail_campo::placeholder{
+    margin-left: -100px;
+}
+
+.div_senha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.senha_campo{
+    margin-top: 2vh;
+    margin-bottom: 3px;
+   padding: 1vh 3vw;
+}
+
+.check{
+    margin-left: 3.7vw;
+    margin-top: 2vh;
+}
+
+.confirmacoes .list_check {
+    font-size: 14px;
+    display: flex;
+}
+
+.confirmacoes .check_inp {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    position: relative;
+}
+
+.botao{
+   margin-left: 8.3vw;
+   margin-top: 2.3vh;
+   padding: 0.5vh 2vw;
+   background-color: var(--cor05);
+   border: none;
+   color: #fff;
+   border-radius: 5px;
+}
+
+.icone{
+    margin-left: 15vw;
+    margin-top: 5vh;
+}
