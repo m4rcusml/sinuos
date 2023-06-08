@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráficos / SINUOS</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/graficos.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+  <header id="cabecalho">
+    <button id="menu-button">
+      <span class="material-symbols-outlined">
+        menu
+      </span>
+    </button>
+
+    <button>
+      <span class="material-symbols-outlined">
+        account_circle
+      </span>
+    </button>
+  </header>
+  <nav id="menu">
+    <div id="menu-lista">
+      <a href="index.html" class="item">
+        <span class="material-symbols-outlined">
+          home
+        </span>
+        Início
+      </a>
+      <a href="graficos.html" class="item selecionado">
+        <span class="material-symbols-outlined">
+          show_chart
+        </span>
+        Gráficos
+      </a>
+      <a href="desenvolvedores.html" class="item">
+        <span class="material-symbols-outlined">
+          groups
+        </span>
+        Desenvolvedores
+      </a>
+    </div>
+    <div id="reportar-erro">
+      <button id="btn-reportar-erro" class="item">
+        <span class="material-symbols-outlined">
+          bug_report
+        </span>
+        Reportar erro
+      </button>
+    </div>
+  </nav>
+  <main>
+    <div class="topo">
+      <img src="imgs/logo1.jpeg" alt="">
+    </div>
+
+    <section id="graficos">
+      <div id="grafico-temperatura"></div>
+      <div id="grafico-ph"></div>
+      <div id="grafico-alcalinidade"></div>
+    </section>
+
+    <div class="botoes-fim">
+      <button id="ir-para-topo">
+        <a href="#">
+          <span class="material-symbols-outlined">
+            arrow_upward
+          </span>
+        </a>
+      </button>
+    </div>
+    <footer id="rodape">
+      <div>
+        <h4 class="titulo">Sample text</h4>
+        <ul>
+          <li>
+            [link ou qualquer outra coisa]
+          </li>
+          <li>
+            [link ou qualquer outra coisa]
+          </li>
+          <li>
+            [link ou qualquer outra coisa]
+          </li>
+          <li>
+            [link ou qualquer outra coisa]
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="titulo">Sample text</h4>
+        <ul>
+          <li>
+            [link ou qualquer outra coisa]
+          </li>
+          <li>
+            [link ou qualquer outra coisa]
+          </li>
+          <li>
+            [link ou qualquer outra coisa]
+          </li>
+          <li>
+            [link ou qualquer outra coisa]
+          </li>
+        </ul>
+      </div>
+
+      <div id="copyright">
+        <p>&copy;Copyright - SINUOS</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="scripts/geral.js"></script>
+  <script src="scripts/graficos.js"></script>
+  <script src="scripts/reportar.js"></script>
+</body>
+
+</html>
