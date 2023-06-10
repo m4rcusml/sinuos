@@ -1,0 +1,241 @@
+@keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor01: #141F51;
+    --cor02: #6E9DC9;
+    --cor03: #528F92;
+    --cor04: #6EC2C6;
+    --cor05: #98D4E0;
+}
+
+body{
+    font-family: sans-serif;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    display: flex;
+    
+}
+
+.cor{
+    background: rgb(152,212,224);
+    background: linear-gradient(90deg, rgba(110,194,198,1) 10%, rgba(152,212,224,1) 40%,   rgba(255,255,255,1) 80%);
+    padding: 6vw 0px;
+    padding-bottom: 13.5vw;
+    background-image: var();
+    max-height: 100%;
+    min-height: 100%;
+    /*background-image: url(/imgs/login/floresta-amazonica-rio-amazonas.webp);
+    background-repeat: no-repeat;
+    max-width: 100%;*/
+}
+
+
+
+.div-informações{
+    margin-left: 9vw;
+}
+
+h1{
+    color: var(--cor01);
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+h2{
+    color: var(--cor01);
+    margin-left: 1em;
+    margin-top: 0.5em ;
+    margin-bottom: 0.5em;
+}
+
+p{
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.p-info{
+    margin-top: 0.3vh;
+}
+
+.p-info2{
+    margin-bottom: 2vh;
+    font-weight: 500;
+}
+
+.img-info{
+    height: 13vh;
+    border-radius: 7px;
+    margin: 2px;
+}
+
+.img-homem{
+    margin-left: 6vw;
+    margin-bottom: 4vh;
+}
+
+.ul-info{
+    margin-bottom:2vh ;
+}
+
+.listas-info{
+    margin-left: 2.8vw;
+    margin-top: 0.5vh;
+}
+
+
+
+.login{
+    border: 2px solid #000000;
+    margin: -13.5vh 0px 0px 56vw;
+    background: rgba(253, 251, 251, 0.75);
+    max-width: 30%;
+    max-width: 100%;
+   max-height: 100%;
+   
+}
+
+.registrar_nome{
+    margin-bottom: -4vh;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--cor01);
+}
+
+.img_login{
+    padding: 2vh 7.72vw;
+    background-color: var(--cor04);
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.div_email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.gmail_campo{
+    margin-top: 7vh;
+    margin-bottom: 3px;
+   padding: 1vh 3vw;
+   max-width: 100%;
+   min-width: 70%;
+}
+
+.gmail_campo::placeholder{
+    margin-left: -100px;
+}
+
+.div_senha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.senha_campo{
+    margin-top: 2vh;
+    margin-bottom: 3px;
+   padding: 1vh 3vw;
+   max-width: 100%;
+   min-width: 70%;
+   max-height: 100%;
+}
+
+.check{
+    margin-left: 3.7vw;
+    margin-top: 2vh;
+}
+
+.confirmacoes .list_check {
+    font-size: 14px;
+    display: flex;
+}
+
+.confirmacoes .check_inp {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    position: relative;
+}
+
+.botao{
+    margin-left: 7.5vw;
+    margin-top: 2vh;
+    margin-bottom: 6.8vh;
+    padding: 0.7vh 2vw;
+    background-color: var(--cor05);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    max-width: 100%;
+ }
+ 
+ .registrar{
+     margin-left: -2em;
+     color: var(--cor01);
+    
+ }
+ 
+ .botao:hover{
+     background-color: var(--cor02);
+     transition: all 0.2s ease-in;
+     transform: scale(1.11);
+     transition: all 0.5s;
+ }
+
+
+
+@media screen and (max-width:768px) {
+   .login{
+    margin-top: 10vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 0px 0px 15vw;
+    height: 79vh;
+   }
+
+ 
+   .check{
+    margin-left: -1vw;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+   }
+    
+   .botao{
+    padding: 1vh 2vw;
+    background-color: var(--cor05);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+ }
+
+ .registrar{
+    margin-left: 10px;
+    color: var(--cor01);
+   
+}
+
+ .div-buton{
+    margin-top: 5vh;
+    margin-left: 9vw;
+ }
+
+}
+
+
+
