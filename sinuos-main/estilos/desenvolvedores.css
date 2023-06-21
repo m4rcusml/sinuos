@@ -1,0 +1,90 @@
+@keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+@keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
+  body{
+    animation: fade-in 1.5s normal forwards ease-in-out;
+  }
+
+#participantes {
+    padding: 1em .5em;
+}
+
+#participantes > .titulo {
+    margin: 1em 0;
+    font-size: max(2.4rem, 1.4vw);
+    text-align: center;
+    color: var(--cor03);
+    animation: go-back 2s;
+}
+
+#participantes .lista {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.lista > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 3em;
+}
+
+.lista > div:nth-of-type(2) {
+    gap: 1em;
+}
+
+.lista .item {
+    max-width: 15vw;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    animation: go-back 2.5s;
+}
+
+.lista .item .imagem {
+    min-width: 240px;
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: go-back 2.5s;
+}
+
+.lista .item .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info * {
+    text-align: center;
+}
+
+.nome {
+    font-size: max(2.2rem, 1.4vw);
+}
+
+.cargo {
+    font-size: max(1.3rem, .8vw);
+}
+
+a{
+    text-decoration: none;
+}
