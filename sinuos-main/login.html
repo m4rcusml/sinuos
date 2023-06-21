@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SINUOS</title>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="estilos/style_login.css">
+</head>
+
+<body>
+
+    <div class="cor">
+        <div class="div-informações">
+            
+
+            <h1>Logando você:</h1>
+            <h2>Você tem acesso</h2>
+            <ul class="ul-info">
+                <li class="listas-info"><p>A mais informações</p> </li>
+                <li class="listas-info"><p>Informações salvos</p></li>
+                <li class="listas-info"><p>Mais opções</p></li>
+                <li class="listas-info"><p>filtros melhores</p></li>
+            </ul>
+        
+            <ul class="confirmacoes">
+                <li class="list_check">
+                    <div>
+                        <input class="check_inp" type="checkbox" id="concordar" name="concordar">
+                        <a href="#">temos de concordancia</a>
+                    </div>
+                </li>
+        </div>
+
+            <div class="login">
+                <img class="img_login" src="imgs/login/lg 10.png" alt="SINUOS">
+                <h1 class="registrar_nome">Logon</h1>
+                <form class="div_email">
+                <input class="gmail_campo" type="email" id="gmail" name="gmail" placeholder="Email">
+                </form>
+
+                <form class="div_senha">
+                <input class="senha_campo" type="password" id="senha" name="senha" placeholder="Senha">
+                </form>    
+
+                <form class="check">
+                    <ul class="confirmacoes">
+                        <li class="list_check">
+                            <div>
+                                <input class="check_inp" type="checkbox" id="check" onclick="salvarDados()">
+                            </div>
+                            <label>Lembrar de mim</label>
+                        </li>
+                </form>
+
+                <div class="div-buton">
+                    <button class="botao" value="Entrar" onclick="compararSenha()" onclick="salvarDados()">continuar</button>
+                </div> 
+                <div>
+                    <a class="registrar" href="registrar.html">Ainda não tem um registro?</a>
+                    
+                </div>
+                
+                
+            </div>
+        
+    </div>
+
+    <script src="scripts/logon.js"></script>
+</body>
+</html>
